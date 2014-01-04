@@ -1,6 +1,6 @@
 <% @blogs.each do |f| %>
-  <%= link_to f.title, blog_path(f) %><br>
-  <%= f.body %><br>
+  Posted By: <%= link_to f.title, blog_path(f) %><br>
+  Description: <%= f.body %><br>
 <% end %>
-
+<br>
 <%= link_to 'New Post', new_blog_path %>

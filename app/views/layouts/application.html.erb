@@ -15,8 +15,20 @@
 			    <li><%= link_to 'Blog', blogs_path %></li>
 			    <li><%= link_to 'Contact Me', contacts_path %></li>
 			    </ul>
+			   <div id="user_nav">
+			     <div class="pull-right">
+            <% if user_signed_in? %>
+            Logged in as <strong><%= current_user.username%></strong>
+            <%= link_to 'Edit profle',edit_user_registration_path %>
+            <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+            <% else %>
+            <%= link_to 'Sign up', new_user_registration_path %> |
+            <%= link_to 'Login', new_user_session_path %>
+            <% end %>
+        </div>
+       </div>
 	    </div>
-    </div>
+     </div>
 
 <div class="container">
 	<%= yield %>

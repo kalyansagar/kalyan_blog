@@ -6,7 +6,7 @@
 			<h1>This is Myspace</h1>
 			<p>Discover,share and connect to Rails Blog from<br>the world's largest streaming library</p>
 			<%=  link_to 'About Me', abouts_path, :class => "btn btn-primary about-button" %>
-			<a href="#" class="btn btn-primary abouts-button">Sign In</a>
+			<%=  link_to 'Sign In', new_user_session_path, :class => "btn btn-primary about-button" %>
 
 		</div>
 	</div>
