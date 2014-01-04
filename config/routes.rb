@@ -1,11 +1,21 @@
 KalyanBlog::Application.routes.draw do
-  
 
 
+
+
+
+
+  get "blogs/index"
+
+  get "blogs/new"
+
+  get "blogs/show"
 
   resources :welcomes
-  
+
   resources :abouts
+
+  resources :contacts
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
