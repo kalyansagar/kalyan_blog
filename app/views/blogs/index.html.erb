@@ -1,6 +1,19 @@
+<table class="table table-bordered">
+    <tr>
+    	<th>Title</th>
+    	<th>Description</th>
+    	<th>Edit</th>
+    	<th>Delete</th>
+    </tr>
+
 <% @blogs.each do |f| %>
-  Posted By: <%= link_to f.title, blog_path(f) %><br>
-  Description: <%= f.body %><br>
+<tr>
+  <td><%= link_to f.title, blog_path(f) %></td>
+   <td><%= f.body %></td>
+   <td><%= link_to 'edit', edit_blog_path(f) %></td>
+   <td><%= link_to 'delete', f, :method=>:delete %></td>
 <% end %>
 <br>
+</table>
 <%= link_to 'New Post', new_blog_path %>
+

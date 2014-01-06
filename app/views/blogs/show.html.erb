@@ -1,5 +1,9 @@
-<%= @blog.title %><br>
-<%= @blog.body %><br>
-
+<table class="table table-bordered">
+	<body background="/assets/bg8.jpg">
+	<tr>
+		<td><%= @blog.title %></td><br>
+		<td><%= @blog.body %></td><br>
+	</tr>
+</table>
 <%= link_to 'previews', blogs_path %>
 

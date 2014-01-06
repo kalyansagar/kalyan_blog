@@ -1,4 +1,6 @@
+<div class="login">
 <h2>Login</h2>
+<div class="card signin-card clearfix"></div>
 
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
   <div class="field"><%= f.label :username %><br />
@@ -14,4 +16,6 @@
   <div class="field"><%= f.submit "Login" %></div>
 <% end %>
 
-<%= render "links" %>
+<%= render "links" %></p>
+</div>
+
