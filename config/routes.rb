@@ -10,7 +10,9 @@ KalyanBlog::Application.routes.draw do
 
   resources :contacts
 
-  resources :blogs
+  resources :blogs do
+    resources :comments
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
