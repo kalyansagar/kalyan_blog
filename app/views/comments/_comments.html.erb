@@ -1,6 +1,11 @@
-<div id="comments">
+<ul class="comments">
 	<% @comments.each do |f| %>
-	<%= f.content %>
+	<li class="comments">
+		<%= f.content %>
+		<div class="created pull-right">
+			<%= f.created_at.strftime('%A %b-%d-%Y %H:%M') %>
+		</div>
+		</li>
 	<% end %>
-</div>
+</ul>
 	
