@@ -9,23 +9,29 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: myapp_development
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: kalyan_blog_development
   pool: 5
-  username: myapp
-  password:
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: myapp_test
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: kalyan_blog_test
   pool: 5
-  username: myapp
-  password:
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: myapp_production
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: kalyan_blog_production
   pool: 5
-  username: myapp
-  password:
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock

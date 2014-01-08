@@ -5,10 +5,9 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'mysql2'
 gem "dynamic_form", "~> 1.1.4"
 
-gem 'rails_12factor', group: :production
 
 
 # Gems used only for assets and not required
@@ -47,4 +46,3 @@ gem 'devise'
 
 # To use debugger
 # gem 'debugger'
-ruby '2.0.0'
